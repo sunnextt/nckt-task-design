@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 export const Subtotal = () => {
     return (
-        <div>
+        <SubtotalSection>
             <SubtotalDiv>
                 <div style={styles}>
                     <SubtextDiv>Subtotal</SubtextDiv>
@@ -30,7 +30,7 @@ export const Subtotal = () => {
                     TOTAL: <span>$2556.64</span>
                 </TotalText>
             </TotalDiv>
-        </div>
+        </SubtotalSection>
     )
 }
 
@@ -39,6 +39,10 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between',
 }
+
+const SubtotalSection = styled.section`
+margin-bottom: 3rem;
+`
 
 const TotalDiv = styled.div`
     display: flex;

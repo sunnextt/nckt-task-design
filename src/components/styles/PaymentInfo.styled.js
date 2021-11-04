@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.section`
     max-width: 100%;
     padding: 0 1rem;
-    margin: auto 2rem;
+    margin: auto 4rem;
 `
 
 export const Title = styled.h1`
@@ -42,7 +42,7 @@ export const Button = styled.button`
     padding: 24px 20px;
     border-radius: 3px;
     color: #fff;
-    font-weight: ${(props) => props.fontWeight || '600'};
+    font-weight: ${(props) => props.fontWeight || 600};
     font-size: ${(props) => props.fontSize || '14px'};
     width: ${(props) => props.width || '100%'};
     transition: all 200ms ease;

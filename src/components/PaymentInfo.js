@@ -104,12 +104,15 @@ export const PaymentInfo = () => {
                                 display: 'block',
                                 margin: '1rem auto',
                                 textAlign: 'left',
+                                fontSize: '16px',
+                                fontWeight: 400,
+                                color: '#000'
                             }}
                         >
                             <RadioInput type="radio" />
                             Use this card for next time purchase
                         </label>
-                        <Button>Add Card</Button>
+                        <Button fontSize="18px" fontWeight="400">Add Card</Button>
                     </Form>
                 </div>
             </Flex>
