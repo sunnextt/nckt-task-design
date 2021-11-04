@@ -9,6 +9,7 @@ const theme = {
         body: '#fff',
     },
     mobile: '960px',
+    sm: '600px',
 }
 
 function App() {

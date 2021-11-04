@@ -8,6 +8,11 @@ export const Wrapper = styled.section`
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: auto 2rem;
+
+     @media (max-width: ${({ theme }) => theme.sm}) {
+    margin: auto 1rem;
+
+    }
 `
 
 export const Title = styled.h1`

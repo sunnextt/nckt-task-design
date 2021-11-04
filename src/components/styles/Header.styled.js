@@ -39,4 +39,10 @@ export const NavLink = styled.a`
         margin: 0;
         padding-right: 1rem;
     }
+    @media (max-width: ${({ theme }) => theme.sm}) {
+        font-size: .8rem;
+        line-height: 26px;
+        margin: 0;
+        padding-right: 0.8rem;
+    }
 `

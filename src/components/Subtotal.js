@@ -26,6 +26,7 @@ export const Subtotal = () => {
                 <Button width="25%" fontSize="18px" fontWeight="400" sm="45%">
                     Complete Payment
                 </Button>
+                <Margin></Margin>
                 <TotalText>
                     TOTAL: <span>$2556.64</span>
                 </TotalText>
@@ -48,18 +49,25 @@ const TotalDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+    justify-content: space-around;
+;
+}
 `
 const TotalText = styled.h4`
     font-size: 22px;
     font-weight: 800;
     margin: auto 0;
 
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-        font-size: 20px;
-        font-weight: 800;
-    }
 `
 
 const Span = styled.span`
     color: #bbb;
+`
+const Margin = styled.div`
+
+@media (max-width: ${({ theme }) => theme.mobile}) {
+margin: 1rem
+}
 `

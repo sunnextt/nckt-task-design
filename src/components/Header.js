@@ -17,8 +17,8 @@ export default function Header() {
                     <Logo src="./images/logo_sig.png" alt="" />
                     <LinksDiv>
                         <NavLink>Trips</NavLink>
-                        <NavLink>Recently viewed</NavLink>
                         <NavLink>Bookings</NavLink>
+                        <NavLink>Recently viewed</NavLink>
                         <Avatar
                             style={stylep}
                             name="Cardi B"
