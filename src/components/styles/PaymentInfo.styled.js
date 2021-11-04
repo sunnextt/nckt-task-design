@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.section`
     max-width: 100%;
     padding: 0 1rem;
-    margin: auto 4rem;
+    margin: auto 3rem;
 `
 
 export const Title = styled.h1`
@@ -61,7 +61,7 @@ export const Button = styled.button`
 `
 
 export const ImageCard = styled.img`
-    width: 80%;
+    width: 76%;
 `
 
 export const Input = styled.input`
