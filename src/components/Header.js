@@ -1,5 +1,6 @@
 import { StyledHeader, Nav, NavLink, Logo } from './styles/Header.styled'
 import { Container } from './styles/Container.styled'
+import styled from 'styled-components'
 import Avatar from 'react-avatar';
 
 const stylep = {
@@ -14,7 +15,7 @@ export default function Header() {
       <Container>
         <Nav>
           <Logo src='./images/logo_sig.png' alt='' />
-          <div style={{marginRight: "4rem"}}>
+          <LinksDiv >
             <NavLink>
               Trips
             </NavLink>
@@ -31,9 +32,16 @@ export default function Header() {
               round 
               size="60px"
               />
-          </div>
+          </LinksDiv>
         </Nav>
       </Container>
     </StyledHeader>
   )
 }
+
+const LinksDiv = styled.div`
+margin-right: 4rem;
+@media (max-width: ${({ theme }) => theme.mobile}) {
+  margin-right: 0;
+}
+`
