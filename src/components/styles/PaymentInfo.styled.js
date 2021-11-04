@@ -33,7 +33,7 @@ export const TextInputWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     
-    @media (max-width: ${({ theme }) => theme.mobile}) {
+    @media (max-width: ${({ theme }) => theme.sm}) {
     flex-direction: column;
     justify-content: center;
 `
@@ -95,7 +95,7 @@ export const Input = styled.input`
   flex: 1
   transition: border .3s ease;
     &::placeholder {
-        color: #0e0e0e;
+        color: grey;
     }
 
   :focus {

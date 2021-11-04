@@ -132,8 +132,13 @@ const RadioStyle = {
 
 const InputDiv = styled.div`
     width: 100%; 
-    padding-right: 2rem
+    padding-right: 2rem;
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
     padding-right: 0
+     padding-right: 2rem;
+  }
+    @media (max-width: ${({ theme }) => theme.sm}) {
+    padding-right: 0
+  }
 `
