@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { Flex } from './styles/Flex.styled'
+import styled from 'styled-components'
+
 import {
+    
     Wrapper,
     ImageCard,
     Form,
@@ -70,15 +73,13 @@ export const PaymentInfo = () => {
                             </RadioGroup>
                         </div>
                         <TextInputWrapper>
-                            <div
-                                style={{ width: '100%', paddingRight: '2rem' }}
-                            >
+                            <InputDiv>
                                 <InputLabel>credit card number</InputLabel>
                                 <Input
                                     name="creditCardNumber"
                                     placeholder="1257 7466 7484 8484"
                                 />
-                            </div>
+                            </InputDiv>
                             <div style={{ width: '100%' }}>
                                 <InputLabel>Expiration date</InputLabel>
                                 <Input
@@ -88,12 +89,10 @@ export const PaymentInfo = () => {
                             </div>
                         </TextInputWrapper>
                         <TextInputWrapper>
-                            <div
-                                style={{ width: '100%', paddingRight: '2rem' }}
-                            >
+                            <InputDiv>
                                 <InputLabel>Security code</InputLabel>
                                 <Input name="SecurityCode" placeholder="420" />
-                            </div>
+                            </InputDiv>
                             <div style={{ width: '100%' }}>
                                 <InputLabel>Postal code</InputLabel>
                                 <Input name="postalCode" placeholder="10119" />
@@ -128,3 +127,13 @@ const RadioStyle = {
     alignItems: 'center',
     margin: '1rem auto',
 }
+
+
+
+const InputDiv = styled.div`
+    width: 100%; 
+    padding-right: 2rem
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding-right: 0
+`

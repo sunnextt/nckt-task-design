@@ -1,15 +1,22 @@
 import styled from 'styled-components'
 
+
 export const Wrapper = styled.section`
     max-width: 100%;
     padding: 0 1rem;
     margin: auto 3rem;
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin: auto 2rem;
 `
 
 export const Title = styled.h1`
     font-size: 1.5rem;
     text-align: left;
     color: #262626;
+    
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 1.2rem;
 `
 
 export const Form = styled.form``
@@ -20,6 +27,10 @@ export const TextInputWrapper = styled.div`
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+    justify-content: center;
 `
 
 export const InputLabel = styled.label`
@@ -36,6 +47,7 @@ export const Paragraph = styled.p`
     text-align: left;
     font-weight: 300;
     color: grey;
+
 `
 export const Button = styled.button`
     background-color: #007fff;
